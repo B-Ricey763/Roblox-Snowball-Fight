@@ -12,7 +12,7 @@ local playerSnowball = game:GetService("ServerStorage").PlayerSnowball
 local wall = workspace.Lobby.Wall -- to keep players out, but snowballs can come
 
 local CACHE_SIZE = 25
-local THROW_SPEED = 500
+local THROW_SPEED = 750
 
 local throwCheck = t.tuple(t.Vector3, t.numberMax(Constants.MAX_THROW_TIME))
 

@@ -48,7 +48,6 @@ function DataService:KnitStart()
 		local success, data = LoadData(player)
 		-- Currently only support saving kills
 		sessionData[player.UserId] = { Kills = if success and data ~= nil then data else 0 }
-		print(sessionData[player.UserId])
 		local leaderstats = LeaderboardSetup(sessionData[player.UserId].Kills)
 		leaderstats.Parent = player
 	end

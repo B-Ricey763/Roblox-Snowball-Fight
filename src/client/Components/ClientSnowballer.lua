@@ -47,7 +47,6 @@ local Snowballer = Component.new({
 })
 
 function Snowballer:Construct()
-	print("Constructed")
 	self._trove = Trove.new()
 	self._powerGui = self._trove:Add(powerGui:Clone())
 	self._startThrow = 0
@@ -75,6 +74,9 @@ function Snowballer:Start()
 	local winding = false
 	-- Wait for the bool to be ready to be used
 	canThrow:OnReady():await()
+	canThrow:Observe(function(value)
+		-- just so the client doesn't yell at you
+	end)
 	ContextActionService:BindAction("Throw", function(name, state, obj)
 		if state == Enum.UserInputState.Begin and canThrow:Get() == true then
 			winding = true
