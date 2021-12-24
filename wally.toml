@@ -1,0 +1,17 @@
+[package]
+name = "bryce/snowball-fight"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Knit = "sleitnick/knit@1.3.0"
+Trove = "sleitnick/trove@0.1.3"
+TableUtil = "sleitnick/table-util@1.1.1"
+Component = "sleitnick/component@2.1.0"
+FastCast = "encodedvenom/fastcastredux@0.1.3"
+Loader = "sleitnick/loader@1.0.2"
+Comm = "sleitnick/comm@0.2.0"
+t = "osyrisrblx/t@3.0.0"
+Timer = "sleitnick/timer@1.0.3"
+Signal = "sleitnick/signal@1.0.1"

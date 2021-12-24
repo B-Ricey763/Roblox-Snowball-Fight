@@ -1,0 +1,12 @@
+# Project place file
+/Snowball-Fight.rbxlx
+
+# Roblox Studio lock files
+/*.rbxlx.lock
+/*.rbxl.lock
+
+# Selene
+roblox.toml
+# Wally
+wally.lock
+Packages
